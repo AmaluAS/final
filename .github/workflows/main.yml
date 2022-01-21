@@ -47,6 +47,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/final:latest
           cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/final:buildcache
           cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/final:buildcache,mode=max
